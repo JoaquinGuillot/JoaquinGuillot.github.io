@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Proyecto Final</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3412/3412079.png">
+</head>
+<body>
+    
+    <nav class="nav">
+        <ul class="list">
+            <li class="list_item">
+                <div class="list_button">
+                    <img src="assets/menu.svg" class="list_img">
+                    <a href="#" class="nav_link">Inicio</a>
+                </div>
+            </li>
+            <li class="list_item list_item--click">
+                <div class="list_button list_button--click">
+                    <img src="assets/document.svg" class="list-img">
+                    <a href="#" class="nav_link">Servicios</a>
+                    <img src="assets/arrow.svg" class="list_arrow">
+                </div>
+                <ul class="list_show">
+                    <li class="list_inside">
+                        <a href="https://dataglobal.com.ar/?gclid=-XmxS_b2PtqgTPP3zK5waAhfwEALw_wcB" class="nav_link nav_link--inside" target="_blank">Mantenimientos</a>
+                    </li>
+                    <li class="list_inside">
+                        <a href="https://donweb.com/es-ar/servidores-dedicados" class="nav_link nav_link--inside" target="_blank">Servidores</a>
+                    </li>
+                    <li class="list_inside">
+                        <a href="#" class="nav_link nav_link--inside">Presupuestos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list_item">
+                <div class="list_button">
+                    <img src="assets/stats.svg" class="list_img">
+                    <a href="https://ayudaleyprotecciondatos.es/2021/07/05/referencias-laborales/" class="nav_link" target="_blank">Referencias</a>
+                </div>
+            </li>
+            <li class="list_item">
+                <div class="list_button">
+                    <img src="assets/contact.svg" class="list_img">
+                    <a id="bot_contacto" href="#" class="nav_link">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <form id="form_contacto" onsubmit="return submitForm()">
+        <H2>Contáctame:</H2>
+        <label>Nombre:</label>
+        <input type="text" id="formname">
+        <br>
+        <label>Email:</label>
+        <input type="email" id="formemail">
+        <br>
+        <label>Mensaje:</label>
+        <textarea id="formmessage"></textarea>
+    <br>
+    <input type="submit" value="Enviar">
+    </form>
+   
+    <header>
+        <img id= "presentacion" src="https://randomuser.me/api/portraits/men/7.jpg" alt="La imagen 
+        no se pudo cargar, inténtalo de nuevo mas tarde.">
+        <div>
+            <h1>Carril Mason</h1>
+            <div id="divider1"></div>
+            <h2>Desarrollador de Software</h2>
+            <h3>Edad: 40</h3>
+        </div>
+    </header>
+
+    <section>
+        <aside>           
+            <h2>Información de contacto</h2>
+            <ul>
+                <li id="tel">Teléfono:</li>
+                <p class="isq">(671) 346-6921</p>
+                <li id="email">E-mail:</li>
+                <p class="isq">mason.lane@example.com</p>
+                <li id="direccion">Dirección</li>
+                <p class="isq">4748 Poplar Dr - California - USA</p>
+                <li id="redes">Redes Sociales:</li>
+                <p class="isq"> <a href="https://twitter.com/" target="_blank">@MasonCar(Twitter)</a></p>
+                <p class="isq"> <a href="https://instagram.com/" target="_blank">@CarMason(Instagram)</a></p>
+                <p class="isq"> <a href="https://facebook.com/" target="_blank">@MasonCar(Facebook)</a></p>
+            </ul>
+            <div class="divider"></div>
+            <h2>Capacidades</h2>
+            <ul>
+                <li>Base de datos y caché</li>
+                <li>HTML5, CSS y JavaScript</li>
+                <li>arquitectura de apps</li>
+                <li>Programas de edición</li>
+                <li>Comunicación</li>
+                <li>Trabajo en equipo</li>
+            </ul>
+            <div class="divider"></div>
+            <h2>Idiomas</h2>
+            <p>Español (nativo)</p>
+            <div class="container">
+                <progress value="100" max="100"></progress>
+            </div>
+            <p>Inglés (avanzado)</p>
+            <div class="container">
+                <progress value="85" max="100"></progress>
+            </div>
+            <p>Alemán (medio)</p>
+            <div class="container">
+                <progress value="50" max="100"></progress>
+            </div>
+
+        </aside>
+        
+        <article>
+            <p>Desarrollador de software con experiencia en diseño,
+                instalación, pruebas y mantenimiento de sistemas de 
+                software. Dominio de varias plataformas, lenguajes y sistemas integrados.
+                Experiencia en las herramientas y procedimientos de desarrollo
+                más vanguardistas. Capaz de autogestión eficazz en proyectos independientes.
+                Buenas habilidades de colaboración dentro de un equipo productivo.
+            </p>
+            <div class="divider"></div>
+            <h2>Formación académica y certficaciones:</h2>
+            <ul>
+                <li>Máster en Ingeniería Informática</li>
+                <p class="izq">ene. 2015 - jun.2017</p>
+                <p class="subtexto">Escuela de Ingeniería informática, Universidad de Buenos Aires, Buenos aires</p>
+                <li>Licenciatura en Ingeniería Informática</li>
+                <p class="izq">sep. 2011 - jun.2014</p>
+                <p class="subtexto">Escuela de Ingeniería informática, Universidad de Buenos Aires, Buenos aires</p>
+            </ul>
+            <div class="divider"></div>
+            <h2>Experiencia laboral</h2>
+            <ul>
+                <li>Desarrollador de software</li>
+                <p class="izq">may. 2020 - jun.2021</p>
+                <p class="subtexto"> <a href="https://www.cyxus.com/" target="_blank">CYXUS</a>, California</p>
+                <p class="subtexto">Colaboración con el equipo de producción para conocer 
+                los requisitos y las especificaciones empresariales en torno a la gestión 
+                de carteras, análisis y riesgos.</p>
+                <p class="subtexto">Resolución de problemas complejos utilizando las últimas 
+                    tecnologías móviles, web y de nube.</p>
+                <p class="subtexto">Codificación eficaz de cambios y alteraciones
+                de software en base a especificaciones de diseño concretas.</p>
+                <p class="subtexto">Desarrollo y presentación de conclusiones y soluciones
+                    a altos ejecutivos y partes interesadas.</p>
+            </ul>
+            <ul>
+                <li>Desarrollador de software</li>
+                <p class="izq">sep. 2018 - abr.2020</p>
+                <p class="subtexto"> <a href="https://www.soluciones.com.ar/home-mobile/" target="_blank">Control PRO</a>, Buenos Aires</p>
+                <p class="subtexto">Trabajé con éxito tanto a nivel independiente como en equipo.</p>
+                <p class="subtexto">Realicé tareas de pruebas automatizadas y desarrollé funciones
+                complejas de forma rutinaria.</p>
+                <p class="subtexto">abordé eficazmente errores complejos.</p>
+                <p class="subtexto">Implementación y actualización de módulos bajo la dirección 
+                    de desarrolladores de software senior.</p>
+            </ul>
+        </article>
+    </section>
+    
+
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
